@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Typed from 'react-typed';
 import heroImage from '../assets/image.png'; // Add your image path
 
 const Hero = () => {
