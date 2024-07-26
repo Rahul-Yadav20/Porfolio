@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { motion, AnimatePresence } from 'framer-motion';
+import { CiMenuBurger } from "react-icons/ci";
+import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +29,7 @@ const Navbar = () => {
           ))}
         </div>
         <button onClick={toggleMenu} className="md:hidden text-white focus:outline-none">
-          ☰
+          {!isOpen?<CiMenuBurger />:<RxCross2 />}
         </button>
       </div>
       <AnimatePresence>
